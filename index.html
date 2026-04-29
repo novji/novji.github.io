@@ -3,58 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>novji Portfolio</title>
+	<title>novji</title>
 	<style>
 		body {
 			margin: 0;
-			font-family: Arial, sans-serif;
-			background: #0f1117;
-			color: #f2f2f2;
+			background: #0b0b0c;
+			color: #e6e6e6;
+			font-family: system-ui, Arial;
 		}
 
 		main {
-			max-width: 900px;
-			margin: 0 auto;
-			padding: 60px 20px;
+			max-width: 720px;
+			margin: 80px auto;
+			padding: 0 16px;
 		}
 
 		h1 {
-			font-size: 48px;
-			margin-bottom: 10px;
+			font-size: 40px;
+			margin: 0 0 6px 0;
+			font-weight: 600;
 		}
 
-		h2 {
-			margin-top: 40px;
-			color: #7aa2ff;
+		.sub {
+			color: #8a8f98;
+			margin-bottom: 24px;
 		}
 
-		p {
-			font-size: 18px;
-			line-height: 1.6;
-			color: #cfcfcf;
+		.section {
+			margin-top: 32px;
 		}
 
-		.card {
-			background: #171a23;
-			border: 1px solid #2a2f3a;
-			border-radius: 12px;
-			padding: 20px;
-			margin-top: 16px;
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
 		}
 
-		.tag {
-			display: inline-block;
-			background: #23283a;
-			color: #d6ddff;
-			padding: 8px 12px;
-			border-radius: 999px;
-			margin: 6px 6px 0 0;
+		.item {
+			background: #141416;
+			border: 1px solid #222;
+			padding: 6px 10px;
+			border-radius: 6px;
 			font-size: 14px;
 		}
 
-		a {
-			color: #7aa2ff;
+		.links {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+		}
+
+		.link {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			color: #9fb4ff;
 			text-decoration: none;
+			font-size: 15px;
+		}
+
+		.link img {
+			width: 18px;
+			height: 18px;
+			object-fit: contain;
 		}
 
 		a:hover {
@@ -64,33 +75,36 @@
 </head>
 <body>
 	<main>
-		<h1>novji Portfolio</h1>
-		<p>Roblox developer working with Luau and JavaScript. 8+ years of experience building Roblox systems, scripts, and gameplay features.</p>
+		<h1>novji</h1>
+		<div class="sub">Roblox developer — Luau / JavaScript — 8+ years</div>
 
-		<h2>Skills</h2>
-		<div class="card">
-			<span class="tag">Roblox</span>
-			<span class="tag">Luau</span>
-			<span class="tag">JavaScript</span>
-			<span class="tag">Game Systems</span>
-			<span class="tag">UI</span>
-			<span class="tag">Scripting</span>
+		<div class="section">
+			<div class="row">
+				<div class="item">Roblox systems</div>
+				<div class="item">Luau</div>
+				<div class="item">JavaScript</div>
+				<div class="item">APIs</div>
+				<div class="item">Networking</div>
+				<div class="item">UI</div>
+				<div class="item">DataStores</div>
+				<div class="item">Optimization</div>
+			</div>
 		</div>
 
-		<h2>About</h2>
-		<div class="card">
-			<p>I create Roblox experiences and systems using Luau, with additional JavaScript experience. My work focuses on clean scripts, gameplay mechanics, and functional user interfaces.</p>
+		<div class="section">
+			<p>I build Roblox systems and gameplay with a focus on structure and performance. Comfortable working across APIs, backend logic, and client systems.</p>
 		</div>
 
-		<h2>Projects</h2>
-		<div class="card">
-			<p>Projects will be added here.</p>
-		</div>
+		<div class="section links">
+			<a class="link" href="https://www.roblox.com/users/10167578664/profile" target="_blank">
+				<img src="https://www.citypng.com/public/uploads/preview/hd-roblox-white-symbol-sign-icon-logo-png-701751694787435ra1r2desi8.png">
+				MrDecode64
+			</a>
 
-	
-		<h2>Contact</h2>
-		<div class="card">
-			<p>GitHub: <a href="https://github.com/novji">github.com/novji</a></p>
+			<div class="link">
+				<img src="https://static.vecteezy.com/system/resources/previews/018/930/680/original/discord-logo-discord-icon-transparent-free-png.png">
+				logicfraud / u64k
+			</div>
 		</div>
 	</main>
 </body>
