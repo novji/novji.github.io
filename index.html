@@ -3,90 +3,149 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>novji</title>
+	<title>Decode64 | Roblox Scripter</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header class="nav">
-		<div class="nav-inner">
-			<a class="logo" href="#home">novji</a>
+	<header class="header">
+		<nav class="nav">
+			<h1 class="logo">Decode64</h1>
 
-			<nav class="nav-links">
-				<a href="#services">Services</a>
+			<div class="links">
+				<a href="#projects">Projects</a>
+				<a href="#systems">Systems</a>
 				<a href="#skills">Skills</a>
-				<a href="#pricing">Pricing</a>
 				<a href="#contact">Contact</a>
-			</nav>
-		</div>
-	</header>
+			</div>
+		</nav>
 
-	<main class="page" id="home">
 		<section class="hero">
-			<div>
-				<div class="kicker">Roblox Developer · Luau · JavaScript · APIs</div>
-				<h1>I make Roblox systems that work.</h1>
+			<p class="tag">Roblox Luau Developer</p>
+			<h2>Systems-focused Roblox scripting.</h2>
+			<p>
+				I build structured Roblox systems in Luau, including vehicle systems, combat frameworks,
+				DataStore handling, tycoon logic, modular services, and reusable gameplay infrastructure.
+			</p>
 
-				<p class="hero-text">
-					8+ years of experience making Roblox gameplay systems, UI, APIs,
-					data systems, tools, automation, and optimized client/server code.
-				</p>
-
-				<div class="actions">
-					<a class="button" href="#contact">Contact me</a>
-					<a class="button dark" href="#pricing">View pricing</a>
-				</div>
+			<div class="hero-buttons">
+				<a class="button" href="https://github.com/novji" target="_blank">View GitHub</a>
+				<a class="button secondary" href="#projects">View Work</a>
 			</div>
 
-			<div class="panel">
-				<div class="stat">
-					<strong>8+</strong>
-					<span>years experience</span>
-				</div>
+			<div class="socials">
+				<a href="https://github.com/novji" target="_blank">
+					<img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub">
+					<span>novji</span>
+				</a>
 
-				<div class="stat">
-					<strong>Luau</strong>
-					<span>client/server scripting</span>
-				</div>
+				<a href="https://www.roblox.com/users/profile?username=MrDecode64" target="_blank">
+					<img src="https://www.citypng.com/public/uploads/preview/hd-new-roblox-logo-icon-png-7017516947874640u7jdms7jd.png" alt="Roblox">
+					<span>MrDecode64</span>
+				</a>
 
-				<div class="stat">
-					<strong>APIs</strong>
-					<span>webhooks, backend logic, automation</span>
-				</div>
+				<a href="#contact">
+					<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-round-color-icon.png" alt="Discord">
+					<span>u64k</span>
+				</a>
+			</div>
+		</section>
+	</header>
+
+	<main>
+		<section id="projects" class="section">
+			<h2>Featured Work</h2>
+
+			<div class="grid">
+				<article class="card">
+					<h3>Event Bus System</h3>
+					<p>A reusable signal and channel framework for decoupling Roblox systems without direct module dependencies.</p>
+					<ul>
+						<li>Custom signal objects</li>
+						<li>Named event channels</li>
+						<li>Connection cleanup</li>
+						<li>Server-safe callbacks</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>DataStore Level System</h3>
+					<p>A persistent player progression system using Roblox DataStores with event-driven loading and saving.</p>
+					<ul>
+						<li>Load and save handling</li>
+						<li>Retry protection</li>
+						<li>Leaderboard display</li>
+						<li>Reset and progression logic</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>Vehicle Gas System</h3>
+					<p>A fuel system for Roblox vehicles with consumption logic, refueling behavior, and configurable vehicle support.</p>
+					<ul>
+						<li>Fuel drain over time</li>
+						<li>Vehicle state checks</li>
+						<li>Refuel support</li>
+						<li>Config-based tuning</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>A-Chassis Modding</h3>
+					<p>Vehicle scripting and chassis adjustments for Roblox car systems, including tuning and custom behavior.</p>
+					<ul>
+						<li>Handling adjustments</li>
+						<li>Vehicle logic edits</li>
+						<li>Custom system additions</li>
+						<li>Gameplay-focused tuning</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>Tycoon Systems</h3>
+					<p>Structured tycoon game systems built around progression, purchases, income loops, and player-owned content.</p>
+					<ul>
+						<li>Dropper logic</li>
+						<li>Button purchasing</li>
+						<li>Cash handling</li>
+						<li>Player tycoon ownership</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>Combat Systems</h3>
+					<p>Roblox combat scripting with server-side logic, hit handling, cooldowns, and reusable attack structures.</p>
+					<ul>
+						<li>Damage handling</li>
+						<li>Cooldowns</li>
+						<li>Hit detection</li>
+						<li>Reusable attack logic</li>
+					</ul>
+				</article>
 			</div>
 		</section>
 
-		<section id="services" class="section">
-			<h2>Services</h2>
+		<section id="systems" class="section">
+			<h2>Systems I Work On</h2>
 
-			<div class="grid">
-				<div class="card">
-					<h3>Roblox Systems</h3>
-					<p>Round systems, combat, shops, inventories, progression, tools, admin panels, and custom mechanics.</p>
+			<div class="systems">
+				<div>
+					<h3>Gameplay Frameworks</h3>
+					<p>Reusable modules, clean APIs, server-authoritative logic, and organized game systems.</p>
 				</div>
 
-				<div class="card">
-					<h3>Luau Scripting</h3>
-					<p>Clean client and server scripts with organized structure, replication, remotes, and maintainable logic.</p>
+				<div>
+					<h3>Vehicle Systems</h3>
+					<p>Gas systems, A-Chassis modifications, tuning logic, vehicle states, and car-related gameplay mechanics.</p>
 				</div>
 
-				<div class="card">
-					<h3>API Work</h3>
-					<p>Discord webhooks, external APIs, backend communication, JavaScript tools, bots, and automation.</p>
+				<div>
+					<h3>Progression Systems</h3>
+					<p>DataStores, leaderstats, saving, loading, cash, levels, rewards, and tycoon progression.</p>
 				</div>
 
-				<div class="card">
-					<h3>UI Development</h3>
-					<p>Menus, shops, dashboards, settings, inventory UI, responsive layouts, and interactive screens.</p>
-				</div>
-
-				<div class="card">
-					<h3>Data Systems</h3>
-					<p>DataStores, profile saving, leaderboards, currencies, items, unlocks, and player progression.</p>
-				</div>
-
-				<div class="card">
-					<h3>Optimization</h3>
-					<p>Fix messy scripts, reduce lag, improve structure, clean networking, and make systems easier to update.</p>
+				<div>
+					<h3>Combat Logic</h3>
+					<p>Damage pipelines, cooldowns, hit checks, server validation, and reusable combat structures.</p>
 				</div>
 			</div>
 		</section>
@@ -95,74 +154,48 @@
 			<h2>Skills</h2>
 
 			<div class="skills">
-				<span>Roblox</span>
 				<span>Luau</span>
-				<span>JavaScript</span>
-				<span>APIs</span>
-				<span>Networking</span>
-				<span>Remotes</span>
+				<span>Roblox Studio</span>
 				<span>DataStores</span>
-				<span>Profile Systems</span>
-				<span>UI</span>
-				<span>UX</span>
-				<span>Webhooks</span>
-				<span>Gamepasses</span>
-				<span>Developer Products</span>
-				<span>Inventories</span>
-				<span>Leaderboards</span>
+				<span>ModuleScripts</span>
+				<span>RemoteEvents</span>
+				<span>Signals</span>
+				<span>Vehicle Systems</span>
+				<span>A-Chassis</span>
+				<span>Tycoon Games</span>
 				<span>Combat Systems</span>
-				<span>Round Systems</span>
-				<span>Admin Systems</span>
-				<span>Automation</span>
-				<span>Optimization</span>
+				<span>Server Logic</span>
+				<span>UI Logic</span>
+				<span>OOP Structure</span>
+				<span>Debugging</span>
 			</div>
 		</section>
 
-		<section id="pricing" class="section">
-			<h2>Pricing</h2>
-
-			<div class="pricing">
-				<div class="price-card">
-					<h3>Small</h3>
-					<div class="price">$10+</div>
-					<p>Small scripts, bug fixes, simple UI edits, basic webhooks.</p>
-				</div>
-
-				<div class="price-card featured">
-					<h3>System</h3>
-					<div class="price">$35+</div>
-					<p>Shops, inventories, round systems, data saving, gameplay systems.</p>
-				</div>
-
-				<div class="price-card">
-					<h3>Advanced</h3>
-					<div class="price">$80+</div>
-					<p>Full mechanics, API systems, large UI systems, optimization work.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact" class="section">
+		<section id="contact" class="section contact">
 			<h2>Contact</h2>
+			<p>For scripting work, systems, or Roblox development, contact me through Discord or GitHub.</p>
 
-			<div class="contact">
-				<a href="https://www.roblox.com/users/10167578664/profile" target="_blank">
-					<img src="https://www.citypng.com/public/uploads/preview/hd-roblox-white-symbol-sign-icon-logo-png-701751694787435ra1r2desi8.png" alt="Roblox">
-					MrDecode64
+			<div class="contact-grid">
+				<a href="https://github.com/novji" target="_blank">
+					<img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub">
+					<span>GitHub: novji</span>
+				</a>
+
+				<a href="https://www.roblox.com/users/profile?username=MrDecode64" target="_blank">
+					<img src="https://www.citypng.com/public/uploads/preview/hd-new-roblox-logo-icon-png-7017516947874640u7jdms7jd.png" alt="Roblox">
+					<span>Roblox: MrDecode64</span>
 				</a>
 
 				<div>
-					<img src="https://static.vecteezy.com/system/resources/previews/018/930/680/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord">
-					logicfraud / u64k
+					<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-round-color-icon.png" alt="Discord">
+					<span>Discord: u64k</span>
 				</div>
-
-				<a href="https://github.com/novji" target="_blank">GitHub: novji</a>
 			</div>
 		</section>
-
-		<footer class="footer">
-			novji · Roblox systems, scripting, APIs, UI, and optimization.
-		</footer>
 	</main>
+
+	<footer class="footer">
+		<p>© 2026 Decode64. Roblox Scripter Portfolio.</p>
+	</footer>
 </body>
 </html>
